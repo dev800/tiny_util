@@ -36,7 +36,7 @@ defmodule TinyUtil.Mixfile do
 
   defp package do
     %{
-      files: ["priv", "lib", "mix.exs", "README*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["happy"],
       licenses: ["BSD 3-Clause"],
       links: %{"Github" => "https://github.com/dev800/tiny_util"}

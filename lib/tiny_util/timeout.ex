@@ -1,9 +1,5 @@
 defmodule TinyUtil.Timeout do
   @moduledoc """
-  超时
-
-  ## Params
-
   * opts
     - :timeout
   """

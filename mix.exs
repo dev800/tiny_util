@@ -5,7 +5,7 @@ defmodule TinyUtil.Mixfile do
     [
       app: :tiny_util,
       name: "TinyUtil",
-      version: "0.1.3",
+      version: "0.1.4",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -22,12 +22,13 @@ defmodule TinyUtil.Mixfile do
 
   def application do
     [
-      applications: []
+      applications: [:mbcs]
     ]
   end
 
   defp deps do
     [
+      {:mbcs, "~> 1.1"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false}
     ]
   end
